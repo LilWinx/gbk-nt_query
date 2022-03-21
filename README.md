@@ -1,6 +1,7 @@
 # gbk-nt_query
 
 Turns a gbk and fasta file into a query-able databse
+
 Simply determine your position of interest and the program will tell you the gene, amino acid and codon.
 
 **Usage**
