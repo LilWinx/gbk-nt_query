@@ -12,7 +12,8 @@ python input.py [position]
 ```
 [position] being the nucleotide position you are interested in finding out about.
 
-This script is currently designed for the SARS-CoV-2 Reference Genome (MN908947.3)
+This script is currently designed for the SARS-CoV-2 Reference Genome (MN908947.3).
+
 It should theoretically work for any closed genome with a fully annotated genbank file (annoted with PGAP/Snippy is recommended)
 
 Cool beanies.
