@@ -18,9 +18,9 @@ if len(sys.argv) < 2:
     raise Exception('no input')
 
 #file = r'C:\Users\Winkie\Downloads\MN908947-3.fasta'
-file = '/Users/winx/Documents/MN908947-3.fasta'
+file = '/Users/winx/Documents/NC_045512.2.fasta'
 #genbank = r'C:\Users\Winkie\Downloads\MN908947-3.gbk'
-genbank = '/Users/winx/Documents/MN908947-3.gbk'
+genbank = '/Users/winx/Documents/NC_0045512.2-mod.gbk'
 product = position_product.position_product(int(sys.argv[1]), genbank, file)
 nucleotide = position_nucleotide.position_nucleotide(int(sys.argv[1]), file)
 protein = position_protein.position_protein(int(sys.argv[1]), genbank)

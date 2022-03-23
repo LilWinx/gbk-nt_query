@@ -6,7 +6,7 @@ def genbankconvert(data):
     out_list = []
     for record in SeqIO.parse(data, "genbank"):
         for feature in record.features:
-            if feature.type == 'CDS':
+            if feature.type == 'CDS' or feature.type == 'mat_peptide':
                 assert len(feature.qualifiers['translation']) == 1
                 out_list.append("%s,%s,%s,%s" % (
                     feature.qualifiers['product'][0],
