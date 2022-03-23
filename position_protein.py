@@ -1,3 +1,4 @@
+import numpy as np
 import genbankconvert
 import pandas as pd
 
@@ -8,6 +9,7 @@ def position_protein(position, genbank):
     database = intbase.astype({'start': int, 'end': int}) # converts the start and end into integers for the fucking IF statement.
     out_sequence = None 
     out_aa = "non-coding"
+    codon_position = np.NaN
     for row in database.itertuples():
         if row.start < position <= row.end:
             out_sequence = row.sequence
