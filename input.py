@@ -1,4 +1,5 @@
 from logging import raiseExceptions
+import os
 import sys
 import position_product
 import position_nucleotide
@@ -17,14 +18,16 @@ pip install biopython
 if len(sys.argv) < 2:
     raise Exception('no input')
 
+dirname = os.path.dirname(__file__)
+file = os.path.join(dirname, r"data\NC_045512.2.fasta")
+genbank = os.path.join(dirname, r"data\NC_0045512.2-mod.gbk") 
+
 #file = r'C:\Users\Winkie\Downloads\MN908947-3.fasta'
-file = '/Users/winx/Documents/NC_045512.2.fasta'
+#file = '/Users/winx/Documents/NC_045512.2.fasta'
 #genbank = r'C:\Users\Winkie\Downloads\MN908947-3.gbk'
-genbank = '/Users/winx/Documents/NC_0045512.2-mod.gbk'
+#genbank = '/Users/winx/Documents/NC_0045512.2-mod.gbk'
 product = position_product.position_product(int(sys.argv[1]), genbank, file)
 nucleotide = position_nucleotide.position_nucleotide(int(sys.argv[1]), file)
 protein = position_protein.position_protein(int(sys.argv[1]), genbank)
 
 print(f"the position {sys.argv[1]} is in the {product}, the nucleotide is {nucleotide} and the amino acid is {protein}")
-
-
