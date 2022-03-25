@@ -4,7 +4,7 @@ Turns a gbk and fasta file into a query-able database
 
 Simply determine your position of interest and the program will tell you the gene, amino acid and codon.
 
-**Usage**
+## Usage
 
 Run the input.py as
 ```
