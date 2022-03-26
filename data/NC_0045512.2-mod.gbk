@@ -83,7 +83,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     266..805
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="leader protein"
+                     /product="nsp1: leader protein"
                      /note="nsp1; produced by both pp1a and pp1ab"
                      /protein_id="YP_009725297.1"
                      /translation="MESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVEEVLSEARQ
@@ -171,7 +171,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     10055..10972
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="3C-like proteinase"
+                     /product="nsp5: 3C-like proteinase"
                      /note="nsp5A_3CLpro and nsp5B_3CLpro; main proteinase
                      (Mpro); mediates cleavages downstream of nsp4. 3D
                      structure of the SARSr-CoV homolog has been determined
@@ -237,7 +237,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     13442..16236
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="RNA-dependent RNA polymerase"
+                     /product="nsp12: RNA-dependent RNA polymerase"
                      /note="nsp12; NiRAN and RdRp; produced by pp1ab only"
                      /protein_id="YP_009725307.1"
                      /translation="SADAQSFLNRVCGVSAARLTPCGTGTSTDVVYRAFDIYNDKVAG
@@ -260,7 +260,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     16237..18039
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="helicase"
+                     /product="nsp13: helicase"
                      /note="nsp13_ZBD, nsp13_TB, and nsp_HEL1core; zinc-binding
                      domain (ZD), NTPase/helicase domain (HEL), RNA
                      5'-triphosphatase; produced by pp1ab only"
@@ -279,7 +279,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     18040..19620
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="3'-to-5' exonuclease"
+                     /product="nsp14: 3'-to-5' exonuclease"
                      /note="nsp14A2_ExoN and nsp14B_NMT; produced by pp1ab
                      only"
                      /translation="AENVTGLFKDCSKVITGLHPTQAPTHLSVDTKFKTEGLCVDIPG
@@ -296,7 +296,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     19621..20658
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="endoRNAse"
+                     /product="nsp15: endoRNAse"
                      /note="nsp15-A1 and nsp15B-NendoU; produced by pp1ab only"
                      /protein_id="YP_009725310.1"
                      /translation="SLENVAFNVVNKGHFDGQQGEVPVSIINNTVYTKVDGVDVELFE
@@ -309,7 +309,7 @@ FEATURES             Location/Qualifiers
      mat_peptide     20659..21552
                      /gene="ORF1ab"
                      /locus_tag="GU280_gp01"
-                     /product="2'-O-ribose methyltransferase"
+                     /product="nsp16: 2'-O-ribose methyltransferase"
                      /note="nsp16_OMT; 2'-o-MT; produced by pp1ab only"
                      /protein_id="YP_009725311.1"
                      /translation="SSQAWQPGVAMPNLYKMQRMLLEKCDLQNYGDSATLPKGIMMNV
