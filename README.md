@@ -4,7 +4,7 @@ Turns a gbk and fasta file into a query-able database
 
 Simply determine your position of interest and the program will tell you the gene, amino acid and codon.
 
-**Usage**
+## Usage
 
 Run the input.py as
 ```
@@ -14,6 +14,6 @@ python input.py [position]
 
 This script is currently designed for the SARS-CoV-2 Reference Genome (NC_045512.2).
 
-It should theoretically work for any closed genome with a fully annotated genbank file (annoted with PGAP/Snippy is recommended)
+It should theoretically work for any closed genome with a fully annotated genbank file (annotated with PGAP/Snippy is recommended)
 
 Cool beanies.
