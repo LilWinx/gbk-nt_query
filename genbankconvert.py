@@ -1,7 +1,5 @@
 from Bio import SeqIO
 
-#genbank = r'C:\Users\Winkie\Downloads\MN908947-3.gbk'
-
 def genbankconvert(data):
     out_list = []
     for record in SeqIO.parse(data, "genbank"):
