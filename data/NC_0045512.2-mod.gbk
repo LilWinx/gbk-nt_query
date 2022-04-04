@@ -4,7 +4,7 @@ DEFINITION  Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1,
 ACCESSION   NC_045512
 VERSION     NC_045512.2
 DBLINK      BioProject: PRJNA485481
-KEYWORDS    RefSeq.
+KEYWORDS    RefSeq
 SOURCE      Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
   ORGANISM  Severe acute respiratory syndrome coronavirus 2
             Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
