@@ -19,8 +19,8 @@ if len(sys.argv) < 2:
     raise Exception('no input')
 
 dirname = os.path.dirname(__file__)
-file = os.path.join(dirname, "data/NC_045512.2.fasta")
-genbank = os.path.join(dirname, "data/NC_0045512.2-mod.gbk") 
+file = os.path.join(dirname, "data/NC_006273.2.fasta")
+genbank = os.path.join(dirname, "data/NC_006273.2.gbk") 
 
 product = position_product.position_product(int(sys.argv[1]), genbank, file)
 nucleotide = position_nucleotide.position_nucleotide(int(sys.argv[1]), file)
