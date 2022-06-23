@@ -1,6 +1,7 @@
 from logging import raiseExceptions
 import os
 import sys
+import argparse
 import position_product
 import position_nucleotide
 import position_protein
@@ -14,16 +15,33 @@ you must have biopython installed
 easy install is just on powershell or terminal
 pip install biopython
 """
+parser = argparse.ArgumentParser(description='gbk-nt_query')
+parser.add_argument(
+    '--virus', '-v', 
+    choices=['sars2', 'hcmv'], 
+    required=True, 
+    help = 'Virus'
+)
+parser.add_argument(
+    'input', 
+    help='Input file'
+)
+args = vars(parser.parse_args())
 
-if len(sys.argv) < 2:
+
+if len(args['input']) < 2:
     raise Exception('no input')
 
 dirname = os.path.dirname(__file__)
-file = os.path.join(dirname, "data/NC_006273.2.fasta")
-genbank = os.path.join(dirname, "data/NC_006273.2.gbk") 
+if args['virus'] == 'hcmv':
+    file = os.path.join(dirname, "data/NC_006273.2.fasta")
+    genbank = os.path.join(dirname, "data/NC_006273.2.gbk")
+elif args['virus'] == 'sars2':
+    file = os.path.join(dirname, "data/NC_045512.2.fasta")
+    genbank = os.path.join(dirname, "data/NC_045512.2-mod.gbk")
 
-product = position_product.position_product(int(sys.argv[1]), genbank, file)
-nucleotide = position_nucleotide.position_nucleotide(int(sys.argv[1]), file)
-protein = position_protein.position_protein(int(sys.argv[1]), genbank)
+product = position_product.position_product(int(args['input']), genbank, file)
+nucleotide = position_nucleotide.position_nucleotide(int(args['input']), file)
+protein = position_protein.position_protein(int(args['input']), genbank)
 
-print(f"the position {sys.argv[1]} is in the {product}, the nucleotide is {nucleotide} and the amino acid is {protein}")
+print(f"the position {args['input']} is in the {product}, the nucleotide is {nucleotide} and the amino acid is {protein}")
