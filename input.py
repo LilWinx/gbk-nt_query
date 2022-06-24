@@ -1,3 +1,4 @@
+from ast import arg
 from logging import raiseExceptions
 import os
 import sys
@@ -18,7 +19,7 @@ pip install biopython
 parser = argparse.ArgumentParser(description='gbk-nt_query')
 parser.add_argument(
     '--virus', '-v', 
-    choices=['sars2', 'hcmv'], 
+    choices=['sars2', 'hcmv', 'H3N2-NA', 'H3N2-HA'], 
     required=True, 
     help = 'Virus'
 )
@@ -39,6 +40,12 @@ if args['virus'] == 'hcmv':
 elif args['virus'] == 'sars2':
     file = os.path.join(dirname, "data/NC_045512.2.fasta")
     genbank = os.path.join(dirname, "data/NC_045512.2-mod.gbk")
+elif args['virus'] == 'H3N2-NA':
+    file = os.path.join(dirname, "data/NC_007368.1.fasta")
+    genbank = os.path.join(dirname, "data/NC_007368.1.gbk")
+elif args['virus'] == 'H3N2-HA':
+    file = os.path.join(dirname, "data/NC_007366.1.fasta")
+    genbank = os.path.join(dirname, "data/NC_007366.1.gbk")
 
 product = position_product.position_product(int(args['input']), genbank, file)
 nucleotide = position_nucleotide.position_nucleotide(int(args['input']), file)
